@@ -1,5 +1,9 @@
-# Mics
+# Misc
 *.DS_Store
+
+# Node stuff
+frontend/node_modules/
+.idea/
 
 # Logs
 logs
