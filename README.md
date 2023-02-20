@@ -30,10 +30,7 @@ We intend to develop a web application called the “Cooking Companion”. Ultim
   - Follow other creators, easily filter for their recipes when searching
   - Step-by-step prompts for when all your hands are busy
 
-
-# Anouncements
-
-## Getting started Development
+# Getting started with Development
 1. Navigate to the main directory of the repo (level that contains compose.yaml)
 2. Run `docker compose build`.  This builds the required docker images for development
 3. Run `docker compose up`.  This starts the containers and runs a local development server at http://localhost:3000
