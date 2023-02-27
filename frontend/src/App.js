@@ -5,18 +5,21 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Hello world!
-        </p>
+        <h1>
+          Cooking Companion
+        </h1>
         <a
           className="App-link"
-          href="https://reactjs.org"
+          href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React
+          Add a Recipe
         </a>
+        <img src={logo} width={25} height={25} className="App-logo" alt="logo" />
+      </header>
+      <header className="App-body">
+          <a>Hello Worlda</a>
       </header>
     </div>
   );
