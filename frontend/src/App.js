@@ -14,15 +14,29 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Add a Recipe
+          Recipes
         </a>
-        <img src={logo} width={25} height={25} className="App-logo" alt="logo" />
-      </header>
-      <header className="App-body">
-          <a>Hello Worlda</a>
+        <a
+          className="App-link"
+          href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Cooks
+        </a>
+        <a
+          className="App-link"
+          href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Sign-in
+        </a>
+        <img src={logo} width={125} height={125} className="App-logo" alt="logo" />
       </header>
     </div>
   );
 }
+
 
 export default App;

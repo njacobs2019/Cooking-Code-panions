@@ -3,7 +3,7 @@
 }
 
 .App-logo {
-  height: 40vmin;
+  height: 12vmin;
   pointer-events: none;
 }
 
@@ -14,18 +14,19 @@
 }
 
 .App-header {
-  background-color: #a6d68e;
-  min-height: 1vh;
+  padding: 0px 25px 0px 0px;
+  background-color: salmon;
+  min-height: 15vh;
   display: flex;
   flex-direction: row;
-  align-items: left;
+  align-items: center;
   justify-content: left;
   font-size: calc(10px + 2vmin);
   color: white;
 }
 
 .App-body {
-  background-color: #e7ce8f;
+  background-color: rgb(204, 241, 151);
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -37,7 +38,8 @@
 
 
 .App-link {
-  color: #13b5a5a3;
+  padding: 1px 75px 1px 75px;
+  color: white;
 }
 
 @keyframes App-logo-spin {
