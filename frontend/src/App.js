@@ -1,10 +1,12 @@
-// Default imports from lab
+// Default imports from the React tutorial
 import logo from './logo.svg';
 import './App.css';
+
 // Import list
 import List from './list/list';
 
 function App() {
+
 
   return (
     <div className="App">
@@ -15,7 +17,7 @@ function App() {
         <p className="App-padding"></p>
         <a
           className="App-link"
-          href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+          href="https://www.youtube.com/watch?v=Pfdyuz30oQU"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -24,7 +26,7 @@ function App() {
         <p className="App-padding"></p>
         <a
           className="App-link"
-          href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+          href="https://www.youtube.com/watch?v=CGoI2-kIkkc"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -44,9 +46,9 @@ function App() {
       </header>
       <header className="App-body">
         <p>
-          Plain text
+          Landing page
         </p>
-        <List/>
+        <List/> 
       </header>
     </div>
   );
