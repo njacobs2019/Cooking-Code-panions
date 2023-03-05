@@ -1,1 +1,0 @@
-// List item component from lab
