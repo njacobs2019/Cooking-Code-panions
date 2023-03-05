@@ -1,0 +1,35 @@
+03/03/23 scrum/meeting notes
+
+Scrum Master: Tristan (sick)
+Substitute Scrum Master: Kass
+Project Manager: Heath
+
+Breakdown of Meeting:
+- Set up and organized for focus group
+- Performed focus group
+- Discussed focus group results
+- Looked at use case models
+- Re-organized use case models
+- Checked in with other deliverable progress
+- Set individual goals for Sunday
+
+Individual goals:
+	Heath:
+	- finish architecture doc
+	- push finished doc to github
+
+	Nick:
+	- finish models after feedback from TA and prof
+	- work on use case descriptions
+	- reorganize branches on github
+
+	Tyler:
+	- format and organize focus group notes
+	- add software development to github
+
+	Tristan:
+	- sprint review 2
+
+	Kass:
+	- work on use case descriptions
+	- push additional documentation to github
