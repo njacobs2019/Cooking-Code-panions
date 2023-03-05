@@ -1,0 +1,51 @@
+02/27/23 Scrum Notes
+
+Scrum master : Tristan
+	- facilities scrum
+	- create documentation
+	- Group liaison to TA/teacher
+
+Project Manager : Heath
+	- Manage product backlog
+	- Managing sprint backlog
+	- Updating Kanban
+
+Conversation Topics:
+	- Continue with Knowledge Acquisition topics
+	- Move C1 and C3 to sprint backlog
+	- Move A1 and A2 to next sprint backlog
+
+Individual goals:
+	
+	Heath:
+		- Update Kanban Board
+		- Update product backlog / sprint backlog
+		- Project Presentation
+		- Architecture design document
+			- Description of Flux for web design
+			- Justification: why we choose flux
+
+	Kass:
+		- Project Presentation
+		- recruited 3 people for focus group
+		- Focus group presentation
+		- create a use case model for Friday’s meeting
+	
+	Nick
+		- update software requirement specification document based on feedback
+		- Focus Group discussion moderator/facilitator
+		- create a use case model for Friday’s meeting
+
+	Tyler:
+		- Software development for Homepage + User stories C1 & C3
+		- create a use case model for Friday’s meeting
+
+	Tristan:
+		- Create sprint review document
+		- record and take notes from focus group
+		- create use case model for Friday’s meeting
+
+Friday meeting
+* Focus Group 3:30pm Friday
+* Architecture design document diagram
+* Use case descriptions (10-20)
