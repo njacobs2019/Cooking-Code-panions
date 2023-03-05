@@ -3,9 +3,12 @@ import logo from './logo.svg';
 import './App.css';
 
 // Import list
-import List from './list/list';
+import List from './List/List';
+
+
 
 function App() {
+
 
 
   return (
@@ -44,12 +47,18 @@ function App() {
         <p className="App-padding"></p>
         <img src={logo} width={125} height={125} className="App-logo" alt="logo" />
       </header>
-      <header className="App-body">
-        <p>
-          Landing page
+      <body className="App-body">
+        <p className="App-column">
+          Ingredients
+          <List/>
         </p>
-        <List/> 
-      </header>
+        <p className="App-padding"></p>
+        <p className="App-column">
+          Instructions
+          <List/>
+        </p>
+        
+      </body>
     </div>
   );
 }

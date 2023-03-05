@@ -7,15 +7,7 @@ function List(props){
     const [listItems, setListItems] = React.useState([
         {
             id: 1,
-            text: "List item 1"
-        },
-        {
-            id: 2,
-            text: "List item 2"
-        },
-        {
-            id: 3,
-            text: "List item 3"
+            text: ""
         },
     ]);
 

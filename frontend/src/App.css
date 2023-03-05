@@ -29,9 +29,20 @@
   background-color: whitesmoke;
   min-height: 100vh;
   display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: left;
+  font-size: calc(10px + 2vmin);
+  color: grey;
+}
+
+.App-column {
+  background-color: whitesmoke;
+  min-height: 100vh;
+  display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: left;
   font-size: calc(10px + 2vmin);
   color: grey;
 }
