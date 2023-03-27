@@ -1,0 +1,50 @@
+Scrum Notes: 
+3/20/2023
+
+Role Rotation:
+
+Project Manager -> Tristan
+SCRUM Master -> Tyler
+
+AGENDA
+	1. Previous sprint/deliverable review
+	2. Deliverable 3 requirements overview
+	3. Deliverable 3 Task assignment
+
+UPCOMING ASSIGNMENTS
+	- Deliverable 3 – 15% – Due date: March 26th, 2023, 11:59PM Eastern Time
+
+DOCUMENTATION
+
+	- 100% on Deliverable 2 - Woohoo!
+	- Domain Modeling and Sequence Diagrams are next.
+	~ Workflow: create class and define relationships -> then create sequence diagram for a use-cases.
+
+	- May save most work for Friday-Saturday.
+
+IMPLEMENTATION
+
+	Need to Clarify Flux Architecture:
+	- Ask Sepideh tommorow for resources/examples of how it all fits together
+
+	Need to get the ball rolling on implementation:
+	- For now just implement something for practice, even if its unrelated to the project.
+	- Frontend:	Tristan, Kass, Tyler(1/2)
+	- Backend/DB:	Heath, Nick, Tyler(1/2)
+	
+ASSIGNMENTS
+
+	Documentation work assignment is TBA until Tuesday, anouncement on discord or in class Tuesday to follow.
+
+
+	Everyone: Look over use-case model, read Heath's architectural description and/or make sure you understand Flux.
+
+	Tyler:		Update Trello board, Get Domain model started, Backend work/knowledge acq. in Node.js.
+
+	Heath:		Backend work/knowledge acq. in Node.js, practice coding.
+
+	Nick:		Sql Database setup/knowledge acquisition.
+
+	Kass:		Frontend work/knowledge acq. in React.js, practice coding.
+	
+	Tristan:	Frontend work/knowledge acq. in React.js, practice coding.
