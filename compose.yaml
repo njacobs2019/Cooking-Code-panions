@@ -10,6 +10,16 @@ services:
       - ./frontend/public:/app/public
     networks:
       - app-net
+  backend:
+    build:
+      context: ./backend
+    ports:
+     - 3001:3001
+    stdin_open: true
+    volumes:
+      - ./backend/src:/app/src
+    networks:
+     - app-net
 
 networks:
   app-net:
