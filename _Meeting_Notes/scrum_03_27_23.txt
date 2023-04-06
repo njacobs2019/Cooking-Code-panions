@@ -1,0 +1,43 @@
+scrum notes 03/27/2023
+
+Scrum Master: Kass
+Product Manager: Nick
+
+Agenda:
+- Pick Product Manager
+- Figure out Scrum role schedule
+- Look ahead at Deliverable 4 tasks
+- Progress report on where development is at
+- Figure out what needs to get done this week
+
+Upcoming Deadlines:
+- Assignment 4 due 4/02
+- Deliverable 4 due 4/09
+
+Main Points:
+
+- Discussed Mongo vs Firebase
+
+- Current Progress: frontend and half of backend
+	- Some more progress on stylizing the frontend that needs to be pushed to GitHub
+	- Unsure how to link pages?
+		- Found some explanations online in ReactJS tutorials
+
+- Discussion: does backend match architecture type?
+
+Takeaways:
+
+- Decided to go with Mongo
+- Figured out how to learn to link pages
+- Need to make sure to do new development in a new branch
+- Need to assess whether our code matches the architecture type we chose
+
+Goals:
+
+--> Get more dev done on frontend, especially adding new pages
+--> Start setting up database
+--> Each pick one design pattern that would work with our application
+
+- Work on developement at same rate, more if you haven't been
+- Think of design pattern by Friday
+	- May use time to let people start on Assignment 4

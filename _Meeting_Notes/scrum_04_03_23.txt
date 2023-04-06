@@ -1,0 +1,54 @@
+scrum notes 04/03/23
+
+Scrum Master: Kass
+Product Manager: Nick
+
+Agenda:
+- Look at Feedback from Deliverable 3
+- Reassess what needs to get done
+- Progress Check on development
+
+Upcoming Deadlines:
+- Deliverable 4 due 4/09
+
+Note:
+- Tyler is not here
+
+Main Points:
+
+- Looked at Feedback for Deliverable 3
+	- Only need to fix minor changes to sequence diagrams tables
+	- Everything else good!
+
+- Looked at descriptions of new development documents
+	- Confusion over configuration management plan?
+		- Is it still due for this Deliverable or not?
+		- Can't judge what need to do for CMP
+		- Will go over in lecture tomorrow
+		- Sepideh said it might be pushed back, too
+	- Mainly need to look at Detailed Design Doc
+
+- Focus on ability to view recipes in development for now
+	- Temporarily ignore improving log in
+	- Focus on being able to click summaries to look at recipes
+
+- Nick reorganized Docker files
+
+- Unsure level of progress on backend because of Tyler's absense
+
+- Discussion: Should we use Flask or Django so that we can pull it together?
+	- Decided Flask
+
+Takeaways:
+- Only update needed to Deliverable 3 material is a slight change on Sequence Diagrams
+- Ignoring Configuration Management Plan for now
+	- Someone needs to message Prof/TA to ask about it
+- Main focus for Friday's meeting should be DCD
+- Development should focus on viewing recipes
+- Need to check in with Tyler about backend progress
+- Will be using Flask for project
+
+Goals:
+
+- Think about design patterns for Friday where we'll do group work on the DCD
+- Work on development as described above and discussed in meeting
