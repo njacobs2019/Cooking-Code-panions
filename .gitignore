@@ -1,5 +1,7 @@
 # Misc
 *.DS_Store
+*.env
+Flask/__pycache__/
 
 # Node stuff
 frontend/node_modules/
