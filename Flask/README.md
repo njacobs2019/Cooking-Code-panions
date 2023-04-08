@@ -1,5 +1,11 @@
 # Development
-This project uses Python 3.11, create a conda environment called `flask`, then pip install -r requirements.txt
+This project uses Python 3.11, create a conda environment called `flask`  
+Run this to install Python dependencies:  
+```
+pip install -r requirements.txt
+```
 
-To start the development server:  
-`flask run`
+Run this to start the Flask development server (it refreshes when files are changed):
+```
+ flask --debug run
+```
