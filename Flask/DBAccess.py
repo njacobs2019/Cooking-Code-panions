@@ -27,6 +27,11 @@ class DBAccess:
     def get_first_recipe(self):
         # Get the first recipe from the database
         return self.recipes_collection.find_one()
+    
+    def get_random_recipe(self):
+        # Get a random recipe from the database
+        random_recipe = self.recipes_collection.aggregate([{ "$sample": { "size": 1 } }])
+        return random_recipe.next()
 
 
 if __name__=="__main__":
