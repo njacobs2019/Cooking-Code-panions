@@ -7,7 +7,7 @@ app = Flask(__name__)
 @app.route("/")
 def tasks():
     db = DBAccess()
-    recipe = db.get_first_recipe()
+    recipe = db.get_random_recipe()
     return render_template("recipe_page.html", recipe=recipe)
 
 # @app.route("/add", methods=["GET", "POST"])
