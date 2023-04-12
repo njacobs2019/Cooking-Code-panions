@@ -1,7 +1,10 @@
 # Misc
 *.DS_Store
 *.env
+
+# Flask stuff
 Flask/__pycache__/
+Flask/env
 
 # Node stuff
 frontend/node_modules/
