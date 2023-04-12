@@ -14,13 +14,12 @@ class DBAccess:
 
     # Singleton contructor, basically says that if you try
     # to contruct another instance, return a ref to the singleton.
-    def __new__(cls):
-        if cls._self is None:
-            cls._self = super().__new__(cls)
-        return cls._self
+    # UNTESTED
+#    def __new__(cls):
+#        if cls._self is None:
+#            cls._self = super().__new__(cls)
+#        return cls._self
 
-    # Init method, just extends the 'class' class after its has 
-    # already been created by python
     def __init__(self):
         # Connect to the MongoDB Atlas cluster
         mongodb_uri = os.environ.get('MONGODB_URI')
