@@ -1,0 +1,46 @@
+<style>
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0 auto;
+    max-width: 900px;
+    background-color: #f0f0f0; /* Change the background color of the page */
+}
+
+h1, h2, h3 {
+    color: #333;
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 2.5em;
+}
+
+h2 {
+    font-size: 2em;
+    margin-top: 1.5em;
+}
+
+h3 {
+    font-size: 1.5em;
+    margin-top: 1em;
+}
+
+img {
+    display: block;
+    margin: 1em auto;
+    border-radius: 10px;
+}
+
+ul, ol {
+    padding-left: 20px;
+}
+
+ul li {
+    margin-bottom: 0.5em;
+}
+
+li b {
+    color: #333;
+}
+</style>
