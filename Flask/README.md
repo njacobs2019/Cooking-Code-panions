@@ -1,7 +1,7 @@
 # Development
 This project uses Python 3.11, create a conda environment called `flask`
 ```
-conda create --name flask2 python=3.11
+conda create --name flask python=3.11
 ```
 Run this to install Python dependencies (when at base directory):  
 ```
