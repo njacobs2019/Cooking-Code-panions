@@ -1,39 +1,55 @@
 {% block body %}
-<div className="App">
-    <header className="App-header">
-        <link rel="stylesheet" type="text/css" href="App.css" />
+<div  >
+    <style>
+    
+    header {
+        background-color: wheat;
+        min-height: 15vh;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: left; 
+     }
+
+     a{
+        background-color: aliceblue;
+        color: black;
+        align-items: center;
+        font-size: larger;
+        padding: 1px 15px 1px 15px;
+     }
+
+    </style>
+    <header  >
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/basic.css') }}">
       <h1>
         Cooking Companion
       </h1>
-      <p className="App-padding"></p>
       <a
-        className="App-link"
         href="https://www.youtube.com/watch?v=Pfdyuz30oQU"
         target="_blank"
         rel="noopener noreferrer"
       >
         Recipes
       </a>
-      <p className="App-padding"></p>
-      <a
-        className="App-link"
+       <a
         href="https://www.youtube.com/watch?v=CGoI2-kIkkc"
         target="_blank"
         rel="noopener noreferrer"
       >
         Cooks
       </a>
-      <p className="App-padding"></p>
-      <a
-        className="App-link"
+
+       <a
         href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
         target="_blank"
         rel="noopener noreferrer"
       >
         Sign-in
       </a>
-      <p className="App-padding"></p>
-      <img src={logo} width={125} height={125} className="App-logo" alt="logo" />
+      
+      <input type="text" placeholder="Search..">
     </header>
   </div>
 {% endblock %}
