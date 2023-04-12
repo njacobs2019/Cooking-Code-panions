@@ -1,3 +1,5 @@
+#This Dockerfile is for later, if we choose to containorize our flask application, needs just a bit of tweaking
+
 FROM node:19-alpine
 
 # copy the requirements file into the image
