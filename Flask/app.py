@@ -6,10 +6,14 @@ app = Flask(__name__)
 
 @app.route("/")
 def tasks():
+
+    #Uncomment when db is working for everyone. -Tyler
     #db = DBAccess()
     #recipe = db.get_random_recipe()
     #return render_template("recipe_page.html", recipe=recipe)
-    return render_template("home.html")
+
+    #For now you can just render individual templates you've made with this. -Tyler
+    return render_template("bigSearch.html")
 
 # @app.route("/add", methods=["GET", "POST"])
 # def add():
