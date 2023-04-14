@@ -2,7 +2,7 @@
 
 ## Developers
   - Tyler Harwood
-  - Nick
+  - Nick Jacobs
   - Kass Belaya
   - Tristan Cilley
   - Heath Miller
@@ -19,7 +19,7 @@ We intend to develop a web application called the “Cooking Companion”. Ultim
 
 - Search Recipes
   - Filter results by tags:
-  - Ingredients, appliances, allergies, creator, and any other way the user wants to describe their     dish. Functions like a hashtag.
+  - Ingredients, appliances, allergies, creator, and any other way the user wants to describe their dish. Functions like a hashtag.
   - Blacklist or whitelist
   - Ability to automatically generate the tags
   - Browse recipes without using search bar
@@ -31,7 +31,16 @@ We intend to develop a web application called the “Cooking Companion”. Ultim
   - Step-by-step prompts for when all your hands are busy
 
 # Getting started with Development
-1. Navigate to the main directory of the repo (level that contains compose.yaml)
-2. Run `docker compose build --no-cache`  This builds the required docker images for development
-3. Run `docker compose up -d`  This starts the containers and runs a local development server at http://localhost:3000
-4. Run `docker compose down` To shut down the container.
+
+1. This project uses Python 3.11, create a conda environment called `flask`
+```
+conda create --name flask python=3.11
+```
+2. Run this to install Python dependencies (when at base directory):  
+```
+pip install -r requirements.txt
+```
+3. Run this to start the Flask development server (it refreshes when files are changed):
+```
+flask --debug run
+```
