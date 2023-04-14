@@ -1,0 +1,10 @@
+{
+    "python.pythonPath":"/home/nick/miniconda3/envs/flask/bin/python",
+    "python.terminal.activateEnvironment": true,
+    "python.analysis.typeCheckingMode": "off",
+    "cSpell.words": [
+        "dotenv",
+        "panions",
+        "pymongo"
+    ]
+}

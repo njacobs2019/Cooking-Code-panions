@@ -1,0 +1,32 @@
+{% extends "layout.html" %}
+
+{% block body %}
+    <h1>{{ recipe.title }}</h1>
+    <img src="{{ recipe.img_url }}" alt="{{ recipe.title }}" width="480">
+    <p>{{ recipe.abstract }}</p>
+    <h2>Overview:</h2>
+    <ul>
+        {% for item in recipe.overview %}
+            <li>{{ item}} </li>
+        {% endfor %}
+    </ul>
+    <h2>Ingredients:</h2>
+    <ul>
+        {% for item in recipe.ingredients %}
+            <li><b>{{ item[0]}}</b> {{ item[1]}}</li>
+        {% endfor %}
+    </ul>
+    <h2>Instructions:</h2>
+    <ol>
+        {% for item in recipe.instructions %}
+            <li>{{ item}} </li>
+        {% endfor %}
+    </ol>
+    <h3>Tags:</h3>
+    <ul>
+        {% for tag in recipe.tags %}
+            <li>{{ tag}} </li>
+        {% endfor %}
+    </ul>
+    
+{% endblock %}
