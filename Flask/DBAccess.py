@@ -14,11 +14,10 @@ class DBAccess:
 
     # Singleton contructor, basically says that if you try
     # to contruct another instance, return a ref to the singleton.
-    # UNTESTED
-#    def __new__(cls):
-#        if cls._self is None:
-#            cls._self = super().__new__(cls)
-#        return cls._self
+    def __new__(cls):
+        if cls._self is None:
+            cls._self = super().__new__(cls)
+        return cls._self
 
     def __init__(self):
         # Connect to the MongoDB Atlas cluster
