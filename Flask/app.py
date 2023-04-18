@@ -1,6 +1,6 @@
 from flask import Flask, redirect, render_template, request
 from DBAccess import DBAccess
-from Search import Search
+from search import Search
 
 app = Flask(__name__)
 
@@ -14,6 +14,9 @@ def search():
 
     db = DBAccess()
     searchbar_input = request.form.get("searchbar")
+
+    print(searchbar_input)
+
     #search_payload = Search(searchbar_input)
 
     if searchbar_input is not None:
