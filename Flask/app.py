@@ -29,4 +29,8 @@ def recipe():
     db = DBAccess()
     recipe = db.get_random_recipe()
     return render_template("recipe_page.html", recipe=recipe)
-    
+
+
+@app.route("/login")
+def login():
+    return render_template("login.html")
