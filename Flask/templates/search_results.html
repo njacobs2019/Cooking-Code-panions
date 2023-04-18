@@ -1,0 +1,10 @@
+{% extends "layout.html" %}
+
+{% block body %}
+    <h2>Search results for {{ search_term }}</h2>
+    <ul>
+        {% for recipe in results %}
+            <li>{{ recipe["title"]}}</li>
+        {% endfor %}
+    </ul>
+{% endblock %}
