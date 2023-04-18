@@ -1,6 +1,7 @@
 import os
 from dotenv import load_dotenv
 from pymongo import MongoClient
+from bson.objectid import ObjectId
 
 
 # Load environmental variables
@@ -43,11 +44,56 @@ class DBAccess:
         # Get a random recipe from the database
         random_recipe = self.recipes_collection.aggregate([{ "$sample": { "size": 1 } }])
         return random_recipe.next()
+    
+    def get_recipe_by_id(self, identifier: str):
+        recipe_id = ObjectId(identifier)
+        return self.recipes_collection.find_one({"_id": recipe_id})
+
+    def full_search(self, search_text):
+        pipeline = [
+                    {
+                        "$search": {
+                            "index": "full_text",
+                            "text": {
+                                "query": search_text,
+                                "path": {
+                                    "wildcard": "*"
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "$addFields": {
+                            "searchScore": {"$meta": "searchScore"}
+                        }
+                    },
+                    {
+                        "$sort": {
+                            "searchScore": -1
+                        }
+                    },
+                    {
+                        "$limit": 10
+                    }
+                ]
+
+        return list(self.recipes_collection.aggregate(pipeline))
+
+def test_get_recipe_by_id():
+    db = DBAccess()
+    identifier = "6439ee7a028ed862258322b8"
+    result = db.get_recipe_by_id(identifier)
+    print(result)
+
+def test_full_search():
+    db = DBAccess()
+    results = db.full_search("blueberries")
+    print(type(results))
+
+    for result in results:
+        print(result["title"])
 
 
 if __name__=="__main__":
-    db = DBAccess()
-
-    result = db.get_first_recipe()
-
-    print(result)
+    # test_get_recipe_by_id()
+    test_full_search()
