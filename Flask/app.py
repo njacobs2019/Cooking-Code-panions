@@ -9,11 +9,11 @@ app = Flask(__name__)
 def tasks():
     return render_template("bigSearch.html")
 
-@app.route("/search", methods=["POST"])
+@app.route("/search", methods=["GET"])
 def search():
 
     db = DBAccess()
-    searchbar_input = request.form.get("searchbar")
+    searchbar_input = request.args.get("searchbar")
 
     print(searchbar_input)
 
