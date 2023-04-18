@@ -4,7 +4,7 @@
     <h2>Search results for {{ search_term }}</h2>
     <ul>
         {% for recipe in results %}
-            <li>{{ recipe["title"]}}</li>
+        <li><a href="/recipe?id={{ recipe['_id'] }}">{{ recipe["title"] }}</a></li>
         {% endfor %}
     </ul>
 {% endblock %}
