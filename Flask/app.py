@@ -7,7 +7,7 @@ app = Flask(__name__)
 
 @app.route("/")
 def tasks():
-    return render_template("bigSearch.html")
+    return render_template("home.html")
 
 @app.route("/search", methods=["GET"])
 def search():
