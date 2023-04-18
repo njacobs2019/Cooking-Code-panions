@@ -1,3 +1,6 @@
+{% extends "layout.html" %}
+
+{% block body %}
 <!DOCTYPE html>
 <html>
     <head>
@@ -65,7 +68,7 @@
         
         <form action="/action_page.php" method="post">
           <div class="imgcontainer">
-            <img src="https://images.unsplash.com/photo-1532939624-3af1308db9a5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1887&q=80" alt="Avatar" class="avatar">
+            <img src="https://images.unsplash.com/photo-1532939624-3af1308db9a5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1887&q=80" width="200">
           </div>
         
           <div class="container">
@@ -89,3 +92,4 @@
         
         </body>
 </html>
+{% endblock %}
