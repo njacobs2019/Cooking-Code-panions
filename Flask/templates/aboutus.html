@@ -1,0 +1,49 @@
+{% extends "layout.html" %}
+
+<!-- This page should provide a list of all team members and a mission statement -->
+
+{% block body %}
+<!DOCTYPE html>
+    <html>
+        <head>
+            <!-- this style section details the css for the HTML code -->
+            <style>
+                body{font-family: 'Courier New', Courier, monospace;
+                background-color: lightblue;}
+                form{border: 1px solid #f1f1f1;}
+
+                .bio{
+                    border: 5px outset red;
+                    background-color: lightblue;
+                    text-align: left;
+                    
+                }
+            </style>
+        </head>
+
+        <body>
+
+            <!-- UMaine Black Bear Logo -->
+            <div class="imgcontainer">
+                <img src="https://tinyurl.com/57e96jp7" width="200">
+              </div>
+
+            <!-- Example of a bio -->
+            <div class="bio">
+
+                <h2>Tristan Cilley</h2>
+
+                <img
+                    className="avatar"
+                    src = "https://tinyurl.com/2p8ttevc"
+                    alt = "tristanPic"
+                    height = "100"
+                    width = "100"
+                    borderRadius = "50%"   
+                />
+
+              </div>
+        </body>
+    </html>
+
+{% endblock %}
