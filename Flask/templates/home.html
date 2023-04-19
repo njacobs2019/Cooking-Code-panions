@@ -1,6 +1,38 @@
 {% extends "layout.html" %}
 {% block body %}
-    <div>
-        Home
-    </div>
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .divText {
+              background-color: white;
+              text-align: left;
+            }
+            </style>
+        <style>
+            .divWelcome {
+                margin: 15px;
+                background-color: lightskyblue;
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="divWelcome">
+            <h2>Welcome to the Cooking Companion!</h2>
+            <h4>A recipe application by students, for students.</h4>
+        </div>
+
+        <div class="divText">
+            <p>The Cooking Companion is an application invented to help amateur chefs <b>(like you!)</b>
+            to get comfortable with cooking by organizing all your recipes for you! Just start by selecting
+            a recipe from our featured recipes list, or inputing a search into the search bar!</p>
+        </div>
+
+        <div class="divText">
+            <h3>Featured Recipes</h3>
+        </div>
+    </body>
+</html>
+
 {% endblock %}
