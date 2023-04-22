@@ -1,48 +1,133 @@
 {% extends "layout.html" %}
 
 <!-- This page should provide a list of all team members and a mission statement -->
-
 {% block body %}
 <!DOCTYPE html>
     <html>
         <head>
-            <!-- this style section details the css for the HTML code -->
+
+            <!-- CSS Style Code -->
             <style>
-                body{font-family: 'Courier New', Courier, monospace;
-                background-color: lightblue;}
+                body{font-family: 'Courier New', Courier, monospace;}
                 form{border: 1px solid #f1f1f1;}
 
-                .bio{
-                    border: 5px outset red;
-                    background-color: lightblue;
-                    text-align: left;
-                    
+                /* UMaine Logo */
+                .logo {
+                    text-align: center;
+                    border: 2px outset gray;
+                    background-color: #F5DEB3;
+                    height: auto;
+                    margin: 20px;
                 }
+
+                .logo img {
+                    width: 300px;
+                    border: 2px outset gray;
+                }
+
+
+                /* Grid of Summary Cards*/
+                .container{
+                    display:grid;
+                    grid-template-columns: auto auto auto;
+                    justify-content: space-evenly;
+                    height: auto;
+                    width: auto; 
+                    gap: 20px;
+                    border: 2px outset gray;
+                    background-color: #F5DEB3;
+                    margin: 20px;
+                    padding: 20px;  
+                }
+
+                /* Student summary card */
+                .card {
+                    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+                    transition: 0.3s;
+                    border-radius: 5px;
+                    width: 300px;
+                    height: 350px;
+                    border: 2px outset gray;
+                    background-color: aliceblue;
+                }
+
+                /* On mouse-over, add a deeper shadow */
+                .card:hover {
+                box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+                }
+
+                /* Student summary info */
+                .text {
+                 padding: 2px 16px;
+                 align-content: center;
+                } 
             </style>
+
         </head>
 
         <body>
 
             <!-- UMaine Black Bear Logo -->
-            <div class="imgcontainer">
-                <img src="https://tinyurl.com/57e96jp7" width="200">
-              </div>
+            <div class="logo">
+                <img src="https://tinyurl.com/57e96jp7">
+                    <h1>The Code Companions</h1>
+            </div>
 
-            <!-- Example of a bio -->
-            <div class="bio">
+            <!-- Grid view of cards-->
+            <div class="container">
 
-                <h2>Tristan Cilley</h2>
+                <!-- Team Member 1 -->
+                <div class="card">
+                    <img src="https://tinyurl.com/2p8ttevc" alt="Avatar" style="width:80%">
 
-                <img
-                    className="avatar"
-                    src = "https://tinyurl.com/2p8ttevc"
-                    alt = "tristanPic"
-                    height = "100"
-                    width = "100"
-                    borderRadius = "50%"   
-                />
+                    <div class="text">
+                      <h4><b>Tristan Cilley</b></h4>
+                      <p>UMaine Junior</p>
+                    </div>
+                </div> 
 
-              </div>
+                <!-- Team Member 2 -->
+                <div class="card">
+                    <img src="https://tinyurl.com/2p8ttevc" alt="Avatar" style="width:80%">
+    
+                    <div class="text">
+                      <h4><b>Kristina Belaya</b></h4>
+                      <p>UMaine Junior</p>
+                    </div>
+                </div> 
+
+                <!-- Team Member 3 -->
+                <div class="card">
+                    <img src="https://tinyurl.com/2p8ttevc" alt="Avatar" style="width:80%">
+    
+                    <div class="text">
+                      <h4><b>Tyler Harwood</b></h4>
+                      <p>UMaine Junior</p>
+                    </div>
+    
+                </div> 
+
+                <!-- Team Member 4 -->
+                <div class="card">
+                    <img src="https://tinyurl.com/2p8ttevc" alt="Avatar" style="width:80%">
+    
+                    <div class="text">
+                      <h4><b>Nicholas Jacobs</b></h4>
+                      <p>UMaine Junior</p>
+                    </div>
+                </div> 
+
+                <!-- Team Member 5 -->
+                <div class="card">
+                    <img src="https://tinyurl.com/2p8ttevc" alt="Avatar" style="width:80%">
+    
+                    <div class="text">
+                      <h4><b>Heath Miller</b></h4>
+                      <p>UMaine Junior</p>
+                    </div>
+                </div>
+            </div>
+
         </body>
     </html>
 
