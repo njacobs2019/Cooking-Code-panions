@@ -3,74 +3,83 @@
 <!DOCTYPE html>
 
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/basic.css') }}">
-        <title>Cooking Code-panions</title>
-    </head>
-    <body>
-        <div  >
-            <style>
-            
-            header {
-                border: 2px outset gray;
-                background-color: wheat;
-                min-height: 15vh;
-                width: 100%;
-                display: flex;
-                flex-direction: row;
-                align-items: center;
-                justify-content: left; 
-             }
-        
-             a{
-                background-color: aliceblue;
-                color: black;
-                align-items: center;
-                font-size: larger;
-                padding: 1px 15px 1px 15px;
-             }
-        
-            </style>
-            <header  >
-            <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/basic.css') }}">
-              
-            <h1>
-                Cooking Companion
-            </h1>
-              
-            <a
-                href="/recipe"
-                target="_blank"
-                rel="noopener noreferrer"
-            >
-            Recipes
-            </a>
-        
-            <a
-            href="https://www.youtube.com/watch?v=CGoI2-kIkkc"
-            target="_blank"
-            rel="noopener noreferrer"
-            >
-          Cooks
-          </a>
-        
-               <a
-                href="/login"
-                rel="noopener noreferrer"
-              >
-                Sign-in
-              </a>
-              <form action="/search" method="get">
-                <input name="searchbar" placeholder="Search..." type="text">
-                <input type="submit" value="search">
-              </form>
-            </header>
-          </div>
 
-        {% block body %}
-        {% endblock %}
-    </body>
+  <!-- HTML document header -->
+  <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/basic.css') }}">
+      <title>Cooking Companion App (BETA)</title>
+  </head>
+
+  <!-- HTML document body -->
+  <body>
+
+    <!-- CSS Style Code -->
+    <style> 
+
+      /* This defines the style of headers*/
+      header{
+        border: 2px outset gray;
+        background-color: rgb(245, 222, 179);
+        width: 100%;
+        justify-content: left;
+        font-size: 60px; 
+        font-family: 'Times New Roman', Times, serif;
+      }
+
+      /* This defines the style of hyperlinks*/
+      a{
+        color: black;
+        align-items: left;
+        font-size: larger;
+        padding: 1px 15px 1px 15px;
+      }
+      
+      /* This defines the style of the navigation bar */
+      nav{
+        border: 2px outset gray;
+        background-color: rgb(245, 222, 179);
+        min-height: 30px;
+        width: 100%;
+        display: flex;
+        flex-direction: auto;
+        grid-template-columns: auto auto;
+        justify-content: right; 
+      }
+
+    </style>
+
+    <!-- HTML Code -->  
+
+    <!-- Header containing Web App Name -->
+    <header>
+      The Cooking Companion
+    </header>
+    
+    <!-- Site Navigation bar -->
+    <nav> 
+      <a href="/" target="_self">
+      Home
+      </a>
+  
+      <a href="/login" target="_self">
+      Sign in
+      </a>
+
+      <a href="/aboutus" target="_self">
+      About us
+      </a>
+
+      <form action="/search" method="get">
+        <input name="searchbar" placeholder="Search..." type="text">
+        <input type="submit" value="search">
+      </form>
+    </nav>
+    
+{% block body %}
+{% endblock %}
+
+  </body>
 </html>
