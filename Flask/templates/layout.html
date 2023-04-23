@@ -49,6 +49,17 @@
         justify-content: right; 
       }
 
+      /* This defines the style of the footer */
+      footer{
+        border: 2px outset gray;
+        background-color: wheat;
+        padding-top: 5px;
+        bottom: 0px;
+        left: 0px;
+        width: 100%;
+        text-align: center;
+      }
+
     </style>
 
     <!-- HTML Code -->  
@@ -80,6 +91,13 @@
     
 {% block body %}
 {% endblock %}
+
+  <footer>
+      <a href="/" target="_self" style="font-size: small">Home</a>
+      <a href="/aboutus" target="_self" style="font-size: small">About us</a>
+      <a href="/login" target="_self" style="font-size: small">Login</a>
+      <br><h5>&copy Cooking Code-panions Inc.<br>Sponsored by classmates like you!</h5>
+  </footer>
 
   </body>
 </html>
