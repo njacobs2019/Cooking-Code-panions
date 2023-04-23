@@ -35,3 +35,7 @@ def recipe():
 @app.route("/login")
 def login():
     return render_template("login.html")
+
+@app.route("/aboutus")
+def aboutus():
+    return render_template("aboutus.html")

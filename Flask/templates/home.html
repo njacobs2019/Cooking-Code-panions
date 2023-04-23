@@ -1,6 +1,48 @@
 {% extends "layout.html" %}
 {% block body %}
-    <div>
-        Home
-    </div>
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .divText {
+              margin-bottom: 20px;
+              background-color: white;
+              text-align: left;
+              padding: 2px 10px 10px 10px;
+            }
+            </style>
+        <style>
+            .divWelcome {
+                border-radius: 25px;
+                margin: 15px;
+                background-color: lightskyblue;
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="divWelcome">
+            <h2>Welcome to the Cooking Companion!</h2>
+            <h4>A recipe application by students, for students.</h4>
+        </div>
+
+        <div class="divText">
+            <p>The Cooking Companion is an application invented to help amateur chefs <b>(like you!)</b>
+            to get comfortable with cooking by organizing all your recipes for you! Just start by selecting
+            a recipe from our featured recipes list, or inputing a search into the search bar!</p>
+        </div>
+
+        <div class="divText">
+            <h3>Featured Recipes</h3>
+            <a href="/recipe?id=6439ee7a028ed862258322b8">Yogurt Sheet Pan Pancakes with Mixed Berries</a><br>
+            <a href="/recipe?id=6439ee7a028ed86225832316">Irish Soda Bread</a><br>
+            <a href="/recipe?id=6439ee7a028ed8622583232c">Blueberry Oatmeal Bread</a><br>
+        </div>
+
+        <div class = "divText" style="text-align: center">
+            <h5>Thank you for bearing with us while we continue to develop our application to be the best it can be! &lt3</h5>
+        </div>
+    </body>
+</html>
+
 {% endblock %}

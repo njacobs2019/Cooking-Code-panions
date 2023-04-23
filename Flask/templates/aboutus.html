@@ -1,0 +1,122 @@
+{% extends "layout.html" %}
+
+<!-- This page should provide a list of all team members and a mission statement -->
+{% block body %}
+
+<!-- CSS Style Code -->
+<style>
+
+    /* UMaine Logo */
+    .logo {
+        text-align: center;
+        height: auto;
+        margin: 20px;
+    }
+
+    .logo img {
+        width: 300px;
+        border: 2px outset gray;
+        background-color: #ffffff;
+    }
+
+    /* Grid of Summary Cards*/
+    .container{
+        border: 2px outset gray;
+        background-color: #F5DEB3;
+        display:grid;
+        grid-template-columns: auto auto auto;
+        justify-content: space-evenly; 
+        gap: 20px;
+        margin: 20px;
+        padding: 20px;  
+    }
+
+    /* Student summary card */
+    .card {
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        transition: 0.3s;
+        border-radius: 5px;
+        width: 300px;
+        height: auto;
+        border: 2px outset gray;
+        background-color: aliceblue;
+        padding: 20px;
+        font-size: 20px;
+    }
+
+    .card img{
+        border-radius: 10%;
+        width: 80%;
+    }
+
+    /* On mouse-over, add a deeper shadow */
+    .card:hover {
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    }
+
+    /* Student summary info */
+    .text {
+        padding: 2px 16px;
+        
+    } 
+</style>
+
+
+<!-- HTML Code -->
+
+<!-- UMaine Black Bear Logo -->
+<div class="logo">
+    <img src="https://tinyurl.com/57e96jp7">
+        <h1>The Code Companions</h1>
+</div>
+
+<!-- Grid view of cards-->
+<div class="container">
+
+    <!-- Team Member 1 -->
+    <div class="card">
+        <img src="https://tinyurl.com/2p8ttevc" alt="Avatar">
+        <div class="text">
+            <h4><b>Tristan Cilley</b></h4>
+            <p>Duck Admirer</p>
+        </div>
+    </div> 
+
+    <!-- Team Member 2 -->
+    <div class="card">
+        <img src="https://tinyurl.com/4hez2pzb" alt="Avatar">
+        <div class="text">
+            <h4><b>Kass Belaya</b></h4>
+            <p>Capri-sun Enthusiast</p>
+        </div>
+    </div> 
+
+    <!-- Team Member 3 -->
+    <div class="card">
+        <img src="https://tinyurl.com/4me2vxrs" alt="Avatar">
+        <div class="text">
+            <h4><b>Tyler Harwood</b></h4>
+            <p>Coding Buff</p>
+        </div>
+
+    </div> 
+
+    <!-- Team Member 4 -->
+    <div class="card">
+        <img src="https://tinyurl.com/45k7s4mr" alt="Avatar">
+        <div class="text">
+            <h4><b>Nicholas Jacobs</b></h4>
+            <p>Dog Fanatic</p>
+        </div>
+    </div> 
+
+    <!-- Team Member 5 -->
+    <div class="card">
+        <img src="https://tinyurl.com/2wbdpf84" alt="Avatar">
+        <div class="text">
+            <h4><b>Heath Miller</b></h4>
+            <p>Cheeseburger Aficionado</p>
+        </div>
+    </div>
+</div>
+{% endblock %}
