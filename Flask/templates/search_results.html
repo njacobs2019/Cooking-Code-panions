@@ -1,10 +1,58 @@
 {% extends "layout.html" %}
 
 {% block body %}
-    <h2>Search results for {{ search_term }}</h2>
+    <style>
+        li{
+            border: 2px outset gray;
+            color: black;
+            background-color: bisque;
+            list-style-type: none;
+            align-items: left;
+            align-content: left;
+            display: flex;
+        }
+        summary{
+            padding: 1px 15px 1px 15px;
+            text-decoration: none;
+            align-content: center;
+            align-items: center;
+            justify-content: left;
+            padding: 5px;
+        }
+        img.thumbnail{
+            padding: 1px 15px 1px 15px;
+        }
+        p.taglist{
+            color: gray;
+        }
+
+    </style>
+    <h2>Search results for <i>{{ search_term }}</i></h2>
     <ul>
         {% for recipe in results %}
-        <li><a href="/recipe?id={{ recipe['_id'] }}" target="_blank">{{ recipe["title"] }}</a></li>
+        
+        <a href="/recipe?id={{ recipe['_id'] }}" target="_blank">
+            <li>
+                {% if recipe.get('img_url') %}
+                    <img class="thumbnail" src="{{ recipe.img_url }}" alt="{{ recipe.title }}" width="256">
+                {% else %}
+                    <img class="thumbnail" src="https://tinyurl.com/57e96jp7" alt="{{ recipe.title }}" width="256" height="256">
+                {% endif %}
+                <summary>
+                    <h2>{{ recipe["title"] }}</h2>
+
+                    <!-- This is almost certainly going to overflow for big inputs, fix later -->
+                    <p class="taglist">
+                        Tags: 
+                        {% for tag in recipe["tags"] %}
+                            {{tag}}
+                        {% endfor %}
+                    </p>
+                    <p>{{recipe["abstract"]}}</p>
+                </summary>
+            </li>
+        </a>
+        
         {% endfor %}
     </ul>
 {% endblock %}
