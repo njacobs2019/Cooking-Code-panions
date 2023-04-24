@@ -1,0 +1,38 @@
+scrum notes 04/10/2023
+
+Scrum Master: Heath
+Product Manager: Kass 
+
+
+Agenda:
+	-Flask demo for team held by Nick
+	-Asses what needs to be done to have a demostration for our final presentation.
+		+Update layout.html(Header-Footer)
+		+Homepage with stuff to look at
+		+Functionality to view list of recipe results and click link to next page
+		+add additional DB functions
+		+Learn CSS
+	
+	-Configuration Management Plan(Work left to do)
+
+
+Upcoming Deadlines:
+	*Peer-Review Report 4 due (4/10/23)
+	*Assignemnt 5 due (4/16/23)
+	*Deliverable 5 due (4/23/23)
+	*Final Presentation due (4/26/23)
+
+Main Points:
+	*Work on assignment 5 with looking forward to deliverable 5
+
+
+Takeaways:
+	*Get organized for development on web app. 
+	*Add styling through CSS; add functionality to web app through DB functions.
+	*Learn CSS
+
+Goals: Kass(CSS KA)
+	Tristen(FLASK KA)
+	Tyler(HOMEPAGE)
+	Heath(UPDATE LAYOUT.HTML)
+	Nick(Specific DBAccess Functions)

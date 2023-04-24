@@ -1,0 +1,24 @@
+scrum notes 04/17/2023
+
+Scrum Master:  Nick
+Product Manager: Tyler
+
+Discussed how the current development already aligns with some of our user stores and they are actually complete --> moved to completed column.
+
+What we expect the functionality to have by the time we demo.
+ - Home page
+ - About us page
+ - Search feature
+ - Click on search results and view a recipe
+
+Task delegations this week:
+
+Heath:
+- Finish configuration management plan
+ - maybe start testing documentation
+
+Tristan and Kass:
+ - Work on frontend (home page, about us):
+
+Tyler and Nick:
+ - Work on search functionality
