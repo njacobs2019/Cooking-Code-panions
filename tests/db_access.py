@@ -1,5 +1,5 @@
 import unittest
-from DBAccess import DBAccess
+from app.DBAccess import DBAccess
 
 class testAuthentication(unittest.TestCase):
 
