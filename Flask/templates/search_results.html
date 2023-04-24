@@ -25,13 +25,16 @@
         p.taglist{
             color: gray;
         }
+        a.e{
+            text-decoration: none;
+        }
 
     </style>
     <h2>Search results for <i>{{ search_term }}</i></h2>
     <ul>
         {% for recipe in results %}
         
-        <a href="/recipe?id={{ recipe['_id'] }}" target="_blank">
+        <a class="e" href="/recipe?id={{ recipe['_id'] }}" target="_blank">
             <li>
                 {% if recipe.get('img_url') %}
                     <img class="thumbnail" src="{{ recipe.img_url }}" alt="{{ recipe.title }}" width="256">
