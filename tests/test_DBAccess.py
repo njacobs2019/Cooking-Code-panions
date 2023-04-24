@@ -4,51 +4,54 @@ sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')
 
 import unittest
 from app.DBAccess import DBAccess
+from bson.objectid import ObjectId
 
 class testAuthentication(unittest.TestCase):
-
-    def __init__(self):
+    def setUp(self):
         self.db = DBAccess()
     
-    # Just need to know whether a recipe object has its URI as an attribute
-    #   If we don't want to do that the alternative is to create the object here, 
-    #   insert it into the db, grab it by id, then verify the id we gave it matches.
-    def test_get_recipe_by_id(self):
-
-        #For a recipe that does exist
+    def test_get_recipe_by_existing_id(self):
+        """
+        Retrieve recipe that is known to exist
+        """
         identifier = "6439ee7a028ed862258322b8"
         result = self.db.get_recipe_by_id(identifier)
-        self.assertEquals(result["_id"], identifier, f"Should be {identifier}")
+        self.assertEqual(result["_id"], ObjectId(identifier), f"Should be {identifier}")
 
-        #For a recipe that does not exist
-        identifier = "6439ee7a028ed862258322c2"
+    def test_get_recipe_by_nonexisting_id(self):
+        """
+        Retrieve recipe that is known not to exist
+        """
+        identifier = "6439ee7a028ed882258322c8"
         result = self.db.get_recipe_by_id(identifier)
-        self.assertEquals(type(result), type(None), f"Should be {type(None)}")
+        self.assertEqual(type(result), type(None), f"Should be {type(None)}")
 
-
-    # Dependant on get_recipe_by_id()
-    #Verifies that 
-    def test_full_search(self):
-
-        known = self.db.get_recipe_by_id("6439ee7a028ed862258322b8")
-        results = self.db.full_search(known["title"])
-
-        tokens = known["title"].split()
-        containsKnown = False
+    def test_full_search_(self):
+        """
+        Verify that full_search returns  a list of recipe objects
+        """
+        known_recipe = self.db.get_recipe_by_id("6439ee7a028ed862258322b8")
+        search_results = self.db.full_search(known_recipe["title"])
     
-        #Verify that full_search returns a list of recipe objects
-        for result in results:
-            self.assertEquals(type(result), type(known), f"Should be {type(known)}")
+        for recipe in search_results:
+            self.assertEqual(type(recipe), type(known_recipe), f"Should be {type(known_recipe)}")
 
-            if result["title"] == known["title"]:
-                containsKnown = True
+    def test_get_with_title(self):
+        """
+        Searches for a recipe with a specific title and checks that
+        the recipe that is returned has that title
+        """
+        title = "Pumpkin Pancakes"
+        recipe = list(self.db.get_with_title(title))[0]
+        self.assertEqual(title, recipe["title"], "The titles must match")
 
-        self.assertTrue(containsKnown)
+    def test_get_first_recipe(self):
+        """
+        Checks to make sure that get_first_recipe returns a recipe and it has a title
+        """
 
-    def test_recipe_display(self, page):
-        recipe = self.db.get_recipe_by_id()
-        #display =        #1. import html as some kind of object
+        recipe = self.db.get_first_recipe()
+        self.assertIsInstance(recipe, dict, "The recipe must be a dictionary")
 
-        #2. grab attribute of that object and test against attribute in display
-        #self.assertEquals(type(result), type(known), f"Should be {type(known)}")
-    
+if __name__ == "__main__":
+    unittest.main()
