@@ -1,9 +1,6 @@
 from flask import Flask, redirect, render_template, request
-from DBAccess import DBAccess
-from search import Search
-
-app = Flask(__name__)
-
+from .DBAccess import DBAccess
+from . import app
 
 @app.route("/")
 def tasks():
@@ -29,8 +26,6 @@ def recipe():
     recipe = db.get_recipe_by_id(identifier)
     return render_template("recipe_page.html", recipe=recipe)
 
-
-# /recipe?id=6439ee7a028ed8622583235c
 
 @app.route("/login")
 def login():

@@ -78,22 +78,3 @@ class DBAccess:
                 ]
 
         return list(self.recipes_collection.aggregate(pipeline))
-
-def test_get_recipe_by_id():
-    db = DBAccess()
-    identifier = "6439ee7a028ed862258322b8"
-    result = db.get_recipe_by_id(identifier)
-    print(result)
-
-def test_full_search():
-    db = DBAccess()
-    results = db.full_search("blueberries")
-    print(type(results))
-
-    for result in results:
-        print(result["title"])
-
-
-if __name__=="__main__":
-    # test_get_recipe_by_id()
-    test_full_search()
