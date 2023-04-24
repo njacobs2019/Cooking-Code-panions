@@ -53,5 +53,19 @@ class testAuthentication(unittest.TestCase):
         recipe = self.db.get_first_recipe()
         self.assertIsInstance(recipe, dict, "The recipe must be a dictionary")
 
+    def test_full_search_by_title(self):
+        """
+             Verify that full_search returns known recipe that you searched for.
+        """
+        known_recipe = self.db.get_recipe_by_id("6439ee7a028ed862258322b8")
+        search_results = self.db.full_search(known_recipe["title"])
+
+        containsKnown = False
+        for recipe in search_results:
+            if recipe["title"] == known_recipe["title"]:
+                containsKnown = True
+
+        self.assertTrue(containsKnown)
+
 if __name__ == "__main__":
     unittest.main()
