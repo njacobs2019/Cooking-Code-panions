@@ -43,7 +43,7 @@ class testAuthentication(unittest.TestCase):
             if result["title"] == known["title"]:
                 containsKnown = True
 
-        self.assertTrue(constainsKnown)
+        self.assertTrue(containsKnown)
 
     def test_recipe_display(self, page):
         recipe = self.db.get_recipe_by_id()
