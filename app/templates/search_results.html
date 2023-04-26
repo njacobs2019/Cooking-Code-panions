@@ -21,6 +21,8 @@
         }
         img.thumbnail{
             padding: 1px 15px 1px 15px;
+            max-width: 256px;
+            max-height: 256px;
         }
         p.taglist{
             color: gray;
@@ -37,9 +39,9 @@
         <a class="e" href="/recipe?id={{ recipe['_id'] }}" target="_blank">
             <li>
                 {% if recipe.get('img_url') %}
-                    <img class="thumbnail" src="{{ recipe.img_url }}" alt="{{ recipe.title }}" width="256">
+                    <img class="thumbnail" src="{{ recipe.img_url }}" alt="{{ recipe.title }}">
                 {% else %}
-                    <img class="thumbnail" src="https://tinyurl.com/57e96jp7" alt="{{ recipe.title }}" width="256" height="256">
+                    <img class="thumbnail" src="https://tinyurl.com/57e96jp7" alt="{{ recipe.title }}">
                 {% endif %}
                 <summary>
                     <h2>{{ recipe["title"] }}</h2>
